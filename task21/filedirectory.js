@@ -38,3 +38,6 @@ fs.rm("newDirectory",(err)=>{
     console.log("Directory is removed");
     
 })
+
+
+

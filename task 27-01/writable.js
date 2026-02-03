@@ -12,3 +12,26 @@ readStream.pipe(writeStream);
 writeStream.on('finish', () => {
     console.log('Data has been written to output.txt successfully.');
 });
+
+
+
+const http=require('http');
+const server=http.createServer((req,res)=>{
+    const url=req.url;
+    if(url==="/"){
+        
+        res.end('Hello World!');
+    }
+    else if(url==="/yt"){
+        res.end("Youtubedotcom");
+    }
+});
+
+const port=3000;
+server.listen(port,()=>{
+
+});
+
+
+
+
